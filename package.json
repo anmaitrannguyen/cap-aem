@@ -1,0 +1,38 @@
+{
+  "name": "@cap-js-community/aem",
+  "version": "1.0.0",
+  "description": "CDS messaging service for AEM",
+  "homepage": "https://github.com/cap-js/cds-dbs/tree/main/sqlite#cds-database-service-for-sqlite",
+  "keywords": [
+    "CAP",
+    "CDS",
+    "AEM"
+  ],
+  "author": "andrew.mai@laidon.com",
+  "main": "index.js",
+  "files": [
+    "cds-plugin.js",
+    "lib",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "jest --silent"
+  },
+  "dependencies": {
+    "@sap/cds": "~7.9.4",
+    "@sap/xb-msg-amqp-v100": "^0.9.58"
+  },
+  "peerDependencies": {
+    "@sap/cds": ">=7.6"
+  },
+  "cds": {
+    "requires": {
+      "kinds": {
+        "enterprise-messaging-aem": {
+          "impl": "@cap-js-community/aem"
+        }
+      }
+    }
+  },
+  "license": "SEE LICENSE"
+}
