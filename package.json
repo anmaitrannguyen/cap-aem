@@ -28,7 +28,8 @@
     "requires": {
       "kinds": {
         "enterprise-messaging-aem": {
-          "impl": "@cap-js-community/aem"
+          "impl": "@cap-js-community/aem",
+          "outbox": true
         }
       }
     }
